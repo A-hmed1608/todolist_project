@@ -11,7 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        //
+        //create table todolist
+        Schema::create('todolist', function (Blueprint $table) {
+            $table->id();
+            $table->string('description');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -19,6 +24,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        //
+        //drop table todolist
+        Schema::dropIfExists('todolist');
     }
 };
