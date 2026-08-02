@@ -15,6 +15,7 @@ return new class extends Migration
         Schema::create('todolist', function (Blueprint $table) {
             $table->id();
             $table->string('description');
+            $table->integer('position')->default(0); //valeur par defaut est 0
             $table->timestamps();
         });
     }

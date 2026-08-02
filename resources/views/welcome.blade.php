@@ -35,7 +35,7 @@
 
     </div>
     <div class="stat-title">github</div>
-    <div class="stat-value text-success">A-hmed1608</div>
+    <div class="stat-value text-accent">A-hmed1608</div>
 
   </div>
 
